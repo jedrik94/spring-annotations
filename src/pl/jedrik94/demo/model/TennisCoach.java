@@ -7,10 +7,10 @@ import pl.jedrik94.demo.service.FortuneService;
 @Component
 public class TennisCoach implements Coach {
 
-    private final FortuneService fortuneService;
+    private FortuneService fortuneService;
 
     @Autowired
-    public TennisCoach(FortuneService fortuneService) {
+    public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
