@@ -7,12 +7,8 @@ import pl.jedrik94.demo.service.FortuneService;
 @Component
 public class TennisCoach implements Coach {
 
-    private FortuneService fortuneService;
-
     @Autowired
-    public void doSomeFunkyStuff(FortuneService fortuneService) {
-        this.fortuneService = fortuneService;
-    }
+    private FortuneService fortuneService;
 
     @Override
     public String getDailyWorkout() {
