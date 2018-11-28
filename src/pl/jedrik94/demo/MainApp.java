@@ -5,7 +5,7 @@ import pl.jedrik94.demo.model.Coach;
 
 public class MainApp {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 
         Coach mainCoach = context.getBean("tennisCoach", Coach.class);
 
