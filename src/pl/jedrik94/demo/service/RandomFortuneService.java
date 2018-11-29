@@ -10,16 +10,16 @@ import java.util.Random;
 public class RandomFortuneService implements FortuneService {
 
     private List<String> fortunes;
-    private final Random randomIntGenerator;
+    private final Random randomNumberGenerator;
 
     public RandomFortuneService() {
-        randomIntGenerator = new Random();
+        randomNumberGenerator = new Random();
         fillFortuneList();
     }
 
     @Override
     public String getFortune() {
-        int randomIndex = randomIntGenerator.nextInt(fortunes.size());
+        int randomIndex = randomNumberGenerator.nextInt(fortunes.size());
         return fortunes.get(randomIndex);
     }
 

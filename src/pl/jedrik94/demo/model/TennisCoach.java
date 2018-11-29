@@ -18,7 +18,7 @@ public class TennisCoach implements Coach {
     private final FortuneService fortuneService;
 
     @Autowired
-    public TennisCoach(@Qualifier(value = "randomFortuneService") FortuneService fortuneService) {
+    public TennisCoach(@Qualifier(value = "fileFortuneService") FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
