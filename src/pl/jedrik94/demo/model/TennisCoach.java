@@ -7,8 +7,11 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import pl.jedrik94.demo.service.FortuneService;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("prototype")
+@Scope("singleton")
 public class TennisCoach implements Coach {
 
     @Value(value = "${tennis_coach.email}")
@@ -38,6 +41,16 @@ public class TennisCoach implements Coach {
 
     public void setTeam(String team) {
         this.team = team;
+    }
+
+    @PostConstruct
+    private void init() {
+        System.out.println("Method lunched with @PostConstruct annotation.");
+    }
+
+    @PreDestroy
+    private void destroy() {
+        System.out.println("Method lunched with @PreDestroy annotation.");
     }
 
     @Override

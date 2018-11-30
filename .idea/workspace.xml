@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af117451-c2ae-409e-8fd1-e2cd56873241" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pl/jedrik94/demo/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jedrik94/demo/MainApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/jedrik94/demo/model/TennisCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/jedrik94/demo/model/TennisCoach.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,7 +39,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2241" />
+          <entry key="java" value="2387" />
           <entry key="properties" value="246" />
           <entry key="txt" value="186" />
           <entry key="xml" value="79" />
@@ -48,7 +47,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2241" />
+          <entry key="JAVA" value="2387" />
           <entry key="PLAIN_TEXT" value="186" />
           <entry key="Properties" value="246" />
           <entry key="XML" value="79" />
@@ -94,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/jedrik94/demo/model/TennisCoach.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="265">
+              <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#391#414#0" expanded="true" />
@@ -108,6 +107,9 @@
                 <element signature="e#924#925#0" expanded="true" />
                 <element signature="e#964#965#0" expanded="true" />
                 <element signature="e#996#997#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+                <element signature="e#1399#1400#0" expanded="true" />
                 <element signature="e#558#559#0" expanded="true" />
                 <element signature="e#608#609#0" expanded="true" />
               </folding>
@@ -259,7 +261,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543567797936" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543568356014" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zatoper" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -354,7 +356,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13457000" />
+    <option name="totallyTimeSpent" value="14013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
@@ -531,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/jedrik94/demo/model/TennisCoach.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="265">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#391#414#0" expanded="true" />
@@ -545,6 +547,9 @@
             <element signature="e#924#925#0" expanded="true" />
             <element signature="e#964#965#0" expanded="true" />
             <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
             <element signature="e#608#609#0" expanded="true" />
           </folding>
