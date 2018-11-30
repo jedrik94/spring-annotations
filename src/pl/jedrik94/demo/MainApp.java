@@ -1,11 +1,12 @@
 package pl.jedrik94.demo;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import pl.jedrik94.demo.configure.ApplicationConfig;
 import pl.jedrik94.demo.model.TennisCoach;
 
 public class MainApp {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
         TennisCoach mainCoach = context.getBean("tennisCoach", TennisCoach.class);
         TennisCoach secondCoach = context.getBean("tennisCoach", TennisCoach.class);
