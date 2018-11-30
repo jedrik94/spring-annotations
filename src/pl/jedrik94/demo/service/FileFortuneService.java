@@ -3,6 +3,7 @@ package pl.jedrik94.demo.service;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,15 +23,18 @@ public class FileFortuneService implements FortuneService {
     public FileFortuneService() {
         fortunes = new ArrayList<>();
         randomNumberGenerator = new Random();
-
-        resolvePathToTxtFile();
-        loadFortunesFromFile();
     }
 
     @Override
     public String getFortune() {
         int randomIndex = randomNumberGenerator.nextInt(fortunes.size());
         return fortunes.get(randomIndex);
+    }
+
+    @PostConstruct
+    private void manageOrderOfInitialMethods() {
+        resolvePathToTxtFile();
+        loadFortunesFromFile();
     }
 
     private void resolvePathToTxtFile() {
