@@ -3,10 +3,12 @@ package pl.jedrik94.demo.model;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import pl.jedrik94.demo.service.FortuneService;
 
 @Component
+@Scope("prototype")
 public class TennisCoach implements Coach {
 
     @Value(value = "${tennis_coach.email}")

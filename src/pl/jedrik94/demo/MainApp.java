@@ -8,12 +8,11 @@ public class MainApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
 
         TennisCoach mainCoach = context.getBean("tennisCoach", TennisCoach.class);
+        TennisCoach secondCoach = context.getBean("tennisCoach", TennisCoach.class);
 
-        System.out.println(mainCoach.getDailyWorkout());
-        System.out.println(mainCoach.getFortune());
+        boolean comparisonOfTennisCoachInstances = (mainCoach == secondCoach);
 
-        System.out.println(mainCoach.getEmail());
-        System.out.println(mainCoach.getTeam());
+        System.out.println("Q: Do mainCoach and secondCoach point to the same memory location? A: " + comparisonOfTennisCoachInstances);
 
         context.close();
     }
