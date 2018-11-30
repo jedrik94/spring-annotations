@@ -1,5 +1,6 @@
 package pl.jedrik94.demo.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,9 @@ public class FileFortuneService implements FortuneService {
 
     private final Random randomNumberGenerator;
     private final List<String> fortunes;
+
+    @Value(value = "${file.path}")
+    private String fortunesFileName;
 
     private String filePath;
 
@@ -38,7 +42,7 @@ public class FileFortuneService implements FortuneService {
     }
 
     private void resolvePathToTxtFile() {
-        ClassPathResource resource = new ClassPathResource("fortunes.txt");
+        ClassPathResource resource = new ClassPathResource(fortunesFileName);
 
         try {
             filePath = resource.getFile().getPath();
