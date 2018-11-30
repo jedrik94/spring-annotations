@@ -1,10 +1,22 @@
 package pl.jedrik94.demo.configure;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import pl.jedrik94.demo.model.Coach;
+import pl.jedrik94.demo.model.SwimCoach;
+import pl.jedrik94.demo.service.FortuneService;
+import pl.jedrik94.demo.service.SadFortuneService;
 
 @Configuration
-@ComponentScan("pl.jedrik94.demo")
 public class ApplicationConfig {
 
+    @Bean
+    public FortuneService sadFortuneService() {
+        return new SadFortuneService();
+    }
+
+    @Bean
+    public Coach swimCoach() {
+        return new SwimCoach(sadFortuneService());
+    }
 }
