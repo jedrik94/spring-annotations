@@ -3,17 +3,17 @@ package pl.jedrik94.demo.model;
 import org.springframework.beans.factory.annotation.Value;
 import pl.jedrik94.demo.service.FortuneService;
 
-public class SwimCoach implements Coach {
+public class PingPongCoach implements Coach {
 
     private final FortuneService fortuneService;
 
-    @Value(value = "${tennis_coach.email}")
+    @Value(value = "${ping_pong_coach.email}")
     private String email;
 
-    @Value(value = "${tennis_coach.team}")
+    @Value(value = "${ping_pong_coach.team}")
     private String team;
 
-    public SwimCoach(FortuneService fortuneService) {
+    public PingPongCoach(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
@@ -35,7 +35,8 @@ public class SwimCoach implements Coach {
 
     @Override
     public String getDailyWorkout() {
-        return "Try not to drown!";
+        return "Pinging 8.8.8.8 with 32 bytes of data:\n" +
+                "Reply from 8.8.8.8: bytes=32 time=10ms TTL=119";
     }
 
     @Override
